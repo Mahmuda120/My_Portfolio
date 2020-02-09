@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800|Saira+Condensed:300,400,500,600,700,800&display=swap');
+
+/**********************
+	Google Fonts
+************************/
+html {
+  scroll-behavior: smooth;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+}
+body{
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Saira Condensed', sans-serif;
+}
+ul,ol{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img{
+	vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,a,p,img,ul,ol,.navbar{
+	margin: 0px;
+	padding: 0px;
+}
+/******************************
+       Common CSS End
+*******************************/
+.head-part{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100vh;
+	background: url('../images/banner.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.svgshape{
+	position: absolute;
+	
+	bottom: -4px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+svg
+{
+	fill: currentcolor;
+}
+.svgshape svg{
+	
+	color: #fff;
+}
+
+
+.navbar.cus-nav{
+	background: #000;
+	z-index: 999;
+}
+.navbar.cus-nav .nav-item .nav-link{
+	color: red;
+}
+.navbar .navbar-brand span{
+	font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    color: #DE1F6B;
+}
+.navbar .navbar-brand{
+	color:#fff;
+	font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+.navbar .navbar-brand:hover{
+	color:#fff;
+}
+.navbar-nav .nav-item .nav-link,.navbar-nav .nav-item.active .nav-link {
+    font-weight: 400;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+     color:#fff;
+     transition: all linear .5s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+	color:#DE1F6B;
+}
+.h-overlay{
+	height: 100%;
+	width: 100%;
+	background:rgba(0,0,0,0.6);
+}
+.head-part .h-con h3{
+	font-size: 70px;
+	color: #fff;
+	font-family: 'Saira Condensed', sans-serif;
+	padding-top: 180px;
+	padding-bottom: 15px;
+	font-weight: 700;
+}
+.head-part .h-con p{
+	font-size: 25px;
+	color: #fff;
+	font-family: 'Saira Condensed', sans-serif;
+	padding-bottom: 20px;
+}
+.social-icon{
+	padding-bottom: 180px;
+}
+.social-icon a{
+	color: #fff;
+	margin-left: 25px;
+	
+	transition: all linear .5s;
+}
+.social-icon a:hover{
+	color: #DE1F6B;
+}
+
+/******************************
+       Header Part End
+*******************************/
+
+.about-part{
+	padding-top: 100px;
+}
+.ab-common h3{
+	font-size: 50px;
+	padding-bottom: 15px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 700;
+}
+.ab-common span{
+	font-size: 50px;
+	padding-bottom: 15px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 700;
+	 color: #DE1F6B;
+}
+.ab-common p{
+	position: relative;
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-bottom: 50px;
+	display: inline-block;
+	
+}
+.ab-common  p:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    right: -50px;
+    top: 15px;
+    width: 30px;
+    background:  #DE1F6B;
+}
+.ab-common p:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: -50px;
+    top: 15px;
+    width: 30px;
+    background:  #DE1F6B;
+}
+.ab-img {
+    position: relative;
+    display: block;
+    
+    margin: 0 auto;
+}
+.about-part .ab-overlay{
+	height: 100%;
+	width: 90%;
+	background: rgba(222, 31, 107, 0.46);
+	position: absolute;
+	top:0px;
+}
+.ab-img img{
+	
+	width: 400px;
+}
+.ab-img:before {
+    border: 8px solid #000;
+}
+.ab-img:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate3d(10px, 26px, -26px);
+}
+.PI{
+	padding-top: 90px;
+}
+.PI li{
+	padding-bottom: 20px;
+	font-size:18px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 400;
+}
+.ab-btn{
+	padding-top: 50px;
+	padding-left: 100px;
+	
+}
+.ab-btn a{
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+	padding: 15px 65px;
+	border: 1px solid #DE1F6B;
+	background: #DE1F6B;
+	border-radius: 90px;
+	color: #fff;
+	transition: all linear .5s;
+}
+.ab-btn:hover a{
+	background: #fff;
+	color: #000;
+	border: 3px solid #DE1F6B;
+	font-weight: 500;
+}
+
+/******************************
+      About Part End
+*******************************/
+.res-part{
+	padding-top: 130px;
+	padding-bottom: 100px;
+}
+.res-head h4{
+	font-size: 32px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 500;
+}
+.res-head .fa {
+    font-size: 28px;
+    color: #DE1F6B;
+    
+}
+.res-style{
+	height: 20px;
+	width:20px;
+	border-radius: 50%;
+	background: #fff;
+	border: 3px solid #DE1F6B;
+}
+.vl {
+    border-left: 2px solid #DE1F6B;
+    height: 130px;
+   
+    margin-left: 9px;
+}
+.res-head{
+	display: flex;
+}
+.edu{
+	display: flex;
+
+}
+.res-con{
+	padding-left: 25px;
+
+}
+.res-con h5{	
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 700;
+	
+}
+.res-con p{	
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-bottom: 20px;
+	font-weight: 400;
+	
+}
+.res-con .sp-2{	
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	
+	font-weight: 400;
+	
+}
+.res-con .sp-1{	
+	font-size: 16px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-bottom: 20px;
+	font-weight: 400;
+	
+}
+
+
+.res-style2{
+	height: 20px;
+	width:20px;
+	border-radius: 50%;
+	background: #fff;
+	border: 3px solid #DE1F6B;
+}
+.vl2 {
+    border-left: 2px solid #DE1F6B;
+    height: 130px;
+   
+    margin-left: 9px;
+}
+.ggg{
+	padding-left: 120px;
+	padding-bottom: 40px;
+}
+.hhh{
+	padding-left: 100px;
+}
+.edu-2{
+	display: flex;
+}
+.res-con2{
+	padding-left: 25px;
+
+}
+.res-con2 h5{	
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 700;
+	
+}
+.res-con2 p{	
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-bottom: 20px;
+	font-weight: 400;
+	
+}
+.res-con2 .sp-22{	
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	
+	font-weight: 400;
+	
+}
+.res-con2 .sp-12{	
+	font-size: 16px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-bottom: 20px;
+	font-weight: 400;
+	
+}
+.pb-con{
+	display: flex;
+}
+.pb-con p{
+	padding-left: 90px;
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	padding-bottom: 5px;
+	padding-right: 370px;
+	font-weight: 400;
+}
+.pb-con span{
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;	
+	font-weight: 400;
+}
+.progress{
+	margin-bottom: 10px;
+	margin-left: 90px;
+}
+.progress-bar {
+    background-color: #DE1F6B;
+    
+}
+
+
+/******************************
+      Resume Part End
+*******************************/
+.ser-part{
+	padding-top: 80px;
+	padding-bottom: 100px;
+	background: url('../images/back.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+}
+.ser-part .ser-head h3{
+	font-size: 50px;
+	padding-bottom: 40px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 700;
+}
+.ser-con  h3{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+}
+.ser-con p{
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #6c7279;
+
+}
+.ser-part .fa {
+    font-size: 28px;
+    color: #DE1F6B;
+    
+}
+
+/******************************
+      Service Part End
+*******************************/
+.work-part{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #f1f1f1;
+}
+.work-part h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.work-items{
+	position: relative;
+}
+.work-part .w-overlay{
+	height: 0%;
+	width: 100%;
+	background:rgba(2,3,1,0.5);
+	position: absolute;
+	top:0px;
+	opacity: 0;
+	transition:all linear .5s;
+}
+.work-items:hover .w-overlay{
+	height: 100%;
+	opacity: 1;
+}
+.w-overlay a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all linear .3s;
+}
+.w-overlay a:hover{
+	color: #DE1F6B;
+	
+	font-weight: 800;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.w-common h3{
+	font-size: 50px;
+	padding-bottom: 50px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 700;
+}
+.w-common span{
+	font-size: 50px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 700;
+	color: #DE1F6B;
+}
+
+/******************************
+     Work Part End
+*******************************/
+.ftr-part{
+	padding-top: 100px;
+}
+.ftr-con{
+	padding-bottom: 60px;
+}
+.contact .con-icon{
+	display: flex;
+	padding-bottom: 20px;
+}
+.contact .con-icon .fa {
+    font-size: 23px;
+    color: #DE1F6B;
+    
+}
+.contact .con-icon p{
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 400;
+	padding-left: 25px;
+	
+}
+.form-control:focus{
+	box-shadow: none;
+	border-bottom: 1px solid #000;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #DE1F6B;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #000;
+   
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-btn{
+	padding-top: 30px;
+	
+}
+.form-btn a{
+	font-size: 17px;
+	font-family: 'Nunito', sans-serif;
+	padding: 10px 35px;
+	border: 1px solid #DE1F6B;
+	background: #DE1F6B;
+	border-radius: 90px;
+	color: #fff;
+	transition: all linear .5s;
+}
+.form-btn:hover a{
+	background: #fff;
+	color: #000;
+	border: 3px solid #DE1F6B;
+	font-weight: 500;
+}
+
+.ftr-cpy{
+	background:#000; 
+}
+.ftr-cpy p{
+	font-size: 20px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
